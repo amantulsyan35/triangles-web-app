@@ -1,0 +1,60 @@
+.Area a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+
+.Area input {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-right: 1em;
+  border: none;
+  outline: none;
+  padding: 1em;
+}
+
+.Area button {
+  border: none;
+  outline: none;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  width: 10%;
+  margin-bottom: 3em;
+}
+
+.Area-output {
+  margin: auto;
+  border: 1px solid black;
+  width: 50%;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .Area-heading {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 3em;
+  }
+
+  .Area input {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 70%;
+  }
+
+  .Area button {
+    width: 50%;
+    margin-bottom: 3em;
+  }
+
+  .Area-output {
+    width: 100%;
+  }
+}

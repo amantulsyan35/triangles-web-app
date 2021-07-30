@@ -1,0 +1,140 @@
+.Triangle {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Triangle-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  width: 30%;
+  margin: auto;
+  height: 12em;
+}
+
+.Triangle-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  width: 30%;
+  margin: auto;
+  height: 12em;
+}
+
+.Triangle-item-1 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  background-color: black;
+  opacity: 0.5;
+}
+.Triangle-item-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Triangle-item-2 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  opacity: 1;
+}
+
+.Triangle-item-2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Triangle-item-2:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+.Triangle-item-3 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  opacity: 1;
+}
+
+.Triangle-item-3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Triangle-item-3:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+.Triangle-item-4 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  opacity: 1;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.Triangle-item-4 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Triangle-item-4:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .Triangle {
+    margin-top: 2em;
+  }
+
+  .Triangle-1 {
+    grid-template-columns: 1fr;
+    width: 70%;
+    height: 24em;
+  }
+
+  .Triangle-2 {
+    grid-template-columns: 1fr;
+    width: 70%;
+    height: 24em;
+  }
+
+  .Triangle-item-2 {
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .Triangle-item-3 {
+    opacity: 0.5;
+    background-color: black;
+  }
+
+  .Triangle-item-4:hover {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+  }
+}

@@ -1,0 +1,100 @@
+.back {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+
+.Form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.Form-group {
+  margin-bottom: 2em;
+}
+
+.Form-group input {
+  padding: 1em;
+  outline: none;
+}
+
+.Render-form {
+  align-items: center;
+  margin-top: 1em;
+  width: 70%;
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 1em;
+  opacity: 0.5;
+}
+
+.Form-group-render {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+}
+
+.Form-group-render input {
+  padding: 0.5em;
+  width: 30%;
+  margin-bottom: 2em;
+  margin: auto;
+}
+
+.Calculate-button {
+  padding: 1em;
+  margin-top: 1em;
+  width: 25%;
+}
+
+.Calculate-output {
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  padding: 1em;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .Calculate-heading {
+    font-size: 1.5em;
+    margin-top: 3em;
+  }
+
+  .Form-container {
+    border: 1px solid black;
+    width: 80%;
+  }
+
+  .Render-form {
+    width: 80%;
+  }
+
+  .Form-group-render input {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .Calculate-button {
+    width: 50%;
+  }
+
+  .Calculate-output {
+    width: 100%;
+  }
+}

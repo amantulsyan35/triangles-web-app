@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+
+import Triangle from './Triangle';
+import Area from './Area';
+import CalcArea from './CalcArea';
+import Hypotenuse from './Hypotenuse';
+import Quiz from './Quiz';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Switch>
+        <Route exact path='/' render={() => <Triangle />} />
+        <Route exact path='/calculate' render={() => <CalcArea />} />
+        <Route exact path='/quiz' render={() => <Quiz />} />
+        <Route exact path='/hypotenuse' render={() => <Hypotenuse />} />
+        <Route exact path='/area' render={() => <Area />} />
+      </Switch>
     </div>
   );
 }
